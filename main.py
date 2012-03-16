@@ -9,7 +9,7 @@ from trace import trace
 
 import sys
 import os.path
-import core_4
+import core
 
 # set I/O
 ptext_path = sys.argv[1]
@@ -18,7 +18,7 @@ f_ptext = file(ptext_path)
 ptext = f_ptext.read()
 f_etext = file(etext_path, 'w')
 
-enigma_1 = core_4.enigma()
+enigma_1 = core.enigma()
 enigma_1.configure()
 enigma_1.shift = shift_user = sys.argv[2]
 
