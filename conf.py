@@ -11,6 +11,7 @@ determine initial rotors shift
 
 from trace import trace
 
+# AUR: There is [1, 2, 3].reverse() and there is the list copying function list().
 def reverse_rotor(rotor):
     ''' returns the reverse list'''
     reverse = [None,] * len(rotor)
@@ -24,6 +25,7 @@ def reverse_rotor(rotor):
 
 def rotors():
     ''' fetch rotors from file and check them, reverse them ''' 
+    # AUR: imports should usually be at the top of the file
     import rotors_file
     rotors_no_reverse = rotors_file.rotors
     rotors = {}

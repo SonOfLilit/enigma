@@ -1,8 +1,8 @@
 
 from trace import trace
 
-import core_4
-enigma_1 = core_4.enigma()
+import core
+enigma_1 = core.enigma()
 enigma_1.configure()
 print 'intreactive enigma'
 

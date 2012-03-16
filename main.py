@@ -20,6 +20,10 @@ f_etext = file(etext_path, 'w')
 
 enigma_1 = core.enigma()
 enigma_1.configure()
+# AUR: Unless this is somehow overridden later, it wouldn't work, as
+# argv[2] is a string and those are immutable, and you mutate the
+# shift state all the time.
+# Aren't there errors when doing shift[i] += 1?
 enigma_1.shift = shift_user = sys.argv[2]
 
 # protector
